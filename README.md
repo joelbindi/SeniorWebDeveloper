@@ -1,4 +1,4 @@
 # Senior Web Developer Nanodegree
 
-Author: Joel Bindi
+Author: Joel Bindi |
 Licence: Creative Commons
