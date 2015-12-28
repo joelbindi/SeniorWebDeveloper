@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Account Creation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="dist/css/main.css" rel="stylesheet">
+  	  
+  </head>
+
+  <body>
+
+    <div class="container" style="width:100%;">
+
+      <form class="form-signin" style="margin:20px auto 0 auto;padding:20px;max-width:250px;">
+      	<div class="topTabs">
+			<a href="index1.html" style="text-decoration:underline;">Create Account</a> | <a href="index2.html">Create Event</a>
+      	</div>
+        <h3 class="form-signin-heading">Create Account</h3>
+        
+        	<p><em>Enter your details below (required)</em></p>
+    
+	        <label for="frmNameA" class="sr-only">Name</label>
+	        <input type="text" name="name" id="frmNameA" placeholder="Full name" required autocomplete="name" autofocus>
+     		
+     		<label for="frmEmailA" class="sr-only">Email</label>
+	     	<input type="email" name="email" id="frmEmailA" placeholder="name@example.com" required autocomplete="email">
+	        
+	        <label for="pswd" class="sr-only">Password</label>
+	        <input id="pswd" type="password" placeholder="Password" autocomplete="password" required>
+	        
+	        	<div id="pswd_info">
+	        	    <h4>Password must meet the following requirements:</h4>
+	        	    <ul>
+	        	        <li id="letter" class="invalid">At least <strong>one letter</strong></li>
+	        	        <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+	        	        <li id="number" class="invalid">At least <strong>one number</strong></li>
+	        	        <li id="length" class="invalid">Be at least <strong>8 characters</strong></li>
+	        	    </ul>
+	        	</div>
+	        	
+	        <label class="checkbox">
+	          <input type="checkbox" value="remember-me"> Remember me
+	        </label>
+	        
+	        <hr>
+	        
+	        <p><em>Extra Info (Optional)</em></p>
+	        <label for="employer" class="sr-only">Employer</label>
+	        <input type="text" id="frmNameEmployer" placeholder="Employer">
+	        
+	        <label for="job_title" class="sr-only">Employer</label>
+	        <input type="text" id="job_title" placeholder="Job Title">
+	        
+	        <label for="bday" class="">Birthday</label>
+	        <input type="date" id="bday" placeholder="Birthday">
+     
+        <button class="btn btn-large btn-primary" type="submit">Sign Up</button>
+
+      </form>
+
+    </div> <!-- /container -->
+	
+	<script src="dist/js/all.js"></script> 
+	
+  </body>
+</html>

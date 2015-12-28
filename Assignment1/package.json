@@ -1,0 +1,14 @@
+{
+  "name": "app_dependencies",
+  "version": "0.0.1",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "*",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "*",
+    "gulp-concat": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-uglify": "*"
+  }
+}

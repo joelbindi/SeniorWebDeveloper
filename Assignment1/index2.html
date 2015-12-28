@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Create Your Event</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link href="dist/css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="container" style="width:100%;">
+
+      <form class="form-createEvent" style="margin:20px auto 0 auto;padding:20px;max-width:250px;">
+        <div class="topTabs">
+          <a href="index1.html">Create Account</a> | <a href="index2.html" style="text-decoration:underline;">Create Event</a>
+        </div>
+        <h3 class="form-createEvent-heading">Create Event</h3>
+        
+        <p><em>Enter event details below</em></p>
+
+        <label for="event_name" class="sr-only">Event Name</label>
+        <input type="text" id="event_name" placeholder="Event Name" required autofocus>
+        
+        <label for="event_host" class="sr-only">Event Host</label>
+        <input type="text" id="event_host" placeholder="Event Host" required>
+        
+        <label>Enter or choose the event type:
+	        <input list="event_type" name="eventType" required /></label>
+	        <datalist id="event_type">
+	          <option value="Birthday">
+	          <option value="Wedding">
+	          <option value="Party">
+	          <option value="Reunion">
+	          <option value="Concert">
+	        </datalist>
+        
+        <label for="start_time" class="">Start Time</label>
+        <input type="datetime-local" id="start_time" placeholder="Start Time" required>
+        
+        <label for="end_time" class="">End Time</label>
+        <input type="datetime-local" id="end_time" placeholder="End Time" required>
+        
+        <label for="location" class="sr-only">Location</label>
+        <input type="text" id="location" placeholder="Location" required>
+        	
+        <label for="guest_list">Guest List</label>
+        <textarea id="event_host" placeholder="Enter Guests Names"  style="min-height:40px;font-size:12px;"></textarea>
+ 		
+ 		<label for="guest_list" class="sr-only">Guest List</label>
+        <textarea id="guest_message" placeholder="Optional message to the guests with additional information about the event" style="min-height:60px;font-size:12px;"></textarea>
+        
+        <button class="btn btn-large btn-primary" type="submit">Submit</button>
+
+      </form>
+
+    </div> <!-- /container -->
+
+  	<script src="dist/js/all.js"></script> 
+  	
+  </body>
+</html>
